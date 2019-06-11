@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import pl.piomin.services.department.client.EmployeeClient;
-import pl.piomin.services.department.client.TestApi;
+import pl.piomin.services.department.client.TenentServiceClient;
 import pl.piomin.services.department.model.Department;
 import pl.piomin.services.department.repository.DepartmentRepository;
 
@@ -27,7 +27,7 @@ public class DepartmentController {
      * 远程精准定向调用测试
      */
     @Autowired
-    TestApi testService;
+    TenentServiceClient testService;
 
     @GetMapping("/test")
     @ResponseBody
